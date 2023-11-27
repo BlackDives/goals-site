@@ -1,5 +1,6 @@
 import React from 'react'
 import { Flex, Text, Input, Button } from '@chakra-ui/react'
+import { FaSearch } from 'react-icons/fa'
 
 const NavBar = () => {
   return (
@@ -53,7 +54,7 @@ const NavBar = () => {
             backgroundColor='darkMode.primary'
             color='darkMode.text'
           >
-            Search
+            <FaSearch />
           </Button>
         </Flex>
       </Flex>
