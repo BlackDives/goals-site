@@ -3,7 +3,7 @@ import { Flex, Text } from '@chakra-ui/react'
 import { NavBar } from './components/nav-bar/NavBar'
 import { NavSection } from './components/nav-section/NavSection'
 import { ContentSection } from './components/content-section/ContentSection'
-import { RightSection } from './components/right-section/RightSection'
+import { SuggestedSection } from './components/right-section/SuggestedSection'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Flex flexDirection='row' width='100%' height='100vh'>
           <NavSection />
           <ContentSection />
-          <RightSection />
+          <SuggestedSection />
         </Flex>
       </Flex>
     </Flex>
