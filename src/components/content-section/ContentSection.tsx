@@ -4,8 +4,20 @@ import { GoalOnFeed } from './GoalOnFeed'
 
 const ContentSection = () => {
   return (
-    <Flex flexDirection='column' width='40%' border='2px solid green'>
-      <Text>Feed</Text>
+    <Flex
+      backgroundColor='darkMode.background'
+      flexDirection='column'
+      width='40%'
+    >
+      <Text
+        color='darkMode.text'
+        borderBottom='2px solid'
+        borderColor='darkMode.primary'
+        fontSize='xl'
+        padding={2}
+      >
+        Feed
+      </Text>
       <Flex flexDirection='column' width='100%'>
         <GoalOnFeed />
         <GoalOnFeed />

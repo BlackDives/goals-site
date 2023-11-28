@@ -5,19 +5,26 @@ const GoalOnFeed = () => {
   return (
     <Flex
       flexDirection='column'
-      border='2px solid'
+      borderBottom='2px solid'
       borderColor='darkMode.primary'
+      padding={2}
     >
+      <Flex
+        flexDirection='row'
+        justifyContent='space-between'
+        width='100%'
+        marginBottom={2}
+      >
+        <Text color='darkMode.text' fontSize='xl'>
+          Bulk up 10lbs over the next 3 months
+        </Text>
+        <Text color='darkMode.text'>KamNotKam</Text>
+      </Flex>
+      <Flex marginBottom={2}>
+        <Text color='darkMode.text'>I want to bulk up about 10lbs</Text>
+      </Flex>
       <Flex flexDirection='row'>
-        <Text>Bulk up 10lbs over the next 3 months</Text>
-        <Text>KamNotKam</Text>
-      </Flex>
-      <Flex>
-        <Text>I want to bulk up about 10lbs</Text>
-      </Flex>
-      <Flex flexDirection='column'>
-        <Text>Progress:</Text>
-        <Text>65%</Text>
+        <Text color='darkMode.text'>Progress: 65%</Text>
       </Flex>
     </Flex>
   )

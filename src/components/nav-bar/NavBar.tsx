@@ -11,6 +11,8 @@ const NavBar = () => {
       width='100%'
       height='100px'
       backgroundColor={'darkMode.background'}
+      borderBottom='2px solid'
+      borderColor='darkMode.primary'
     >
       <Flex
         height='100%'
@@ -34,11 +36,10 @@ const NavBar = () => {
       >
         <Flex
           height='50px'
-          width='50%'
+          width='55%'
           border='2px solid'
           borderColor='darkMode.primary'
           borderRadius={3}
-          // marginX={10}
         >
           <Input
             placeholder='Search'

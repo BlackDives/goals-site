@@ -25,6 +25,9 @@ const NavSection = () => {
       background='darkMode.background'
       flexDirection='column'
       alignItems='center'
+      borderRight='2px solid'
+      borderColor='darkMode.primary'
+      paddingY={2}
     >
       <UnorderedList
         listStyleType='none'
