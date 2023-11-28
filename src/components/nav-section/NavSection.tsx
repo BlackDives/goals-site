@@ -20,13 +20,20 @@ const Links = [
 
 const NavSection = () => {
   return (
-    <Flex width='20%' background='darkMode.background'>
+    <Flex
+      width='30%'
+      background='darkMode.background'
+      flexDirection='column'
+      alignItems='center'
+    >
       <UnorderedList
         listStyleType='none'
-        width='100%'
+        width='50%'
         display='flex'
         flexDirection='column'
-        alignItems='center'
+        alignItems='flex-start'
+        paddingLeft={0}
+        margin={0}
       >
         {Links.map((data) => {
           return (

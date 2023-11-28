@@ -14,18 +14,20 @@ const NavBar = () => {
     >
       <Flex
         height='100%'
-        width='20%'
+        width='30%'
         flexDirection='row'
         alignItems='center'
         justifyContent='center'
       >
-        <Text fontSize='50px' color={'darkMode.primary'}>
-          GLZ
-        </Text>
+        <Flex flexDirection='row' width='50%' justifyContent='flex-start'>
+          <Text fontSize='50px' color={'darkMode.primary'}>
+            GLZ
+          </Text>
+        </Flex>
       </Flex>
       <Flex
         height='100%'
-        width='80%'
+        width='70%'
         flexDirection='row'
         alignItems='center'
         justifyContent='flex-start'
@@ -36,7 +38,7 @@ const NavBar = () => {
           border='2px solid'
           borderColor='darkMode.primary'
           borderRadius={3}
-          marginX={10}
+          // marginX={10}
         >
           <Input
             placeholder='Search'
