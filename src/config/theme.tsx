@@ -17,6 +17,8 @@ const theme = extendTheme({
       primary: '#8E5BB9',
       secondary: '#AF92C3',
       accent: '#C95DAC',
+      white: '#FFFFF',
+      black: '#00000',
     },
   },
   fontSizes: {

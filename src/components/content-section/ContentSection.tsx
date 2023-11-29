@@ -7,7 +7,7 @@ const ContentSection = () => {
     <Flex
       backgroundColor='darkMode.background'
       flexDirection='column'
-      width='40%'
+      width='60%'
     >
       <Text
         color='darkMode.text'

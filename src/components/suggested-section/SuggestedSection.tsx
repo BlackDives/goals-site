@@ -7,7 +7,7 @@ const SuggestedSection = () => {
     <Flex
       background='darkMode.background'
       flexDirection='column'
-      width='30%'
+      width='40%'
       borderLeft='2px solid'
       borderColor='darkMode.primary'
     >
@@ -15,14 +15,15 @@ const SuggestedSection = () => {
         width='100%'
         flexDirection='row'
         justifyContent='space-between'
-        padding={2}
+        paddingX={5}
+        marginTop={3}
       >
         <Text color='darkMode.text' fontSize='xl'>
           Suggested Section
         </Text>
         <Text color='darkMode.text'>See All</Text>
       </Flex>
-      <Flex flexDirection='column' padding={2}>
+      <Flex flexDirection='column' paddingX={5} marginTop={3}>
         <SuggestedContact />
         <SuggestedContact />
         <SuggestedContact />

@@ -3,7 +3,7 @@ import { Flex, Text } from '@chakra-ui/react'
 import { NavBar } from './components/nav-bar/NavBar'
 import { NavSection } from './components/nav-section/NavSection'
 import { ContentSection } from './components/content-section/ContentSection'
-import { SuggestedSection } from './components/right-section/SuggestedSection'
+import { SuggestedSection } from './components/suggested-section/SuggestedSection'
 
 function App() {
   return (

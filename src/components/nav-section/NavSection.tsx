@@ -7,15 +7,17 @@ import { FaMessage } from 'react-icons/fa6'
 import { FaBookmark } from 'react-icons/fa6'
 import { FaUser } from 'react-icons/fa6'
 import { FaGear } from 'react-icons/fa6'
+import { FaMagnifyingGlass } from 'react-icons/fa6'
 
 const Links = [
   { id: 1, title: 'Home', route: '#', icon: <FaHouse /> },
-  { id: 2, title: 'Goals', route: '#', icon: <FaBarsStaggered /> },
-  { id: 3, title: 'Friends', route: '#', icon: <FaPeopleGroup /> },
-  { id: 4, title: 'Messages', route: '#', icon: <FaMessage /> },
-  { id: 5, title: 'Bookmarks', route: '#', icon: <FaBookmark /> },
-  { id: 6, title: 'Profile', route: '#', icon: <FaUser /> },
-  { id: 7, title: 'Settings', route: '#', icon: <FaGear /> },
+  { id: 2, title: 'Search', route: '#', icon: <FaMagnifyingGlass /> },
+  { id: 3, title: 'Goals', route: '#', icon: <FaBarsStaggered /> },
+  { id: 4, title: 'Friends', route: '#', icon: <FaPeopleGroup /> },
+  { id: 5, title: 'Messages', route: '#', icon: <FaMessage /> },
+  { id: 6, title: 'Bookmarks', route: '#', icon: <FaBookmark /> },
+  { id: 7, title: 'Profile', route: '#', icon: <FaUser /> },
+  { id: 8, title: 'Settings', route: '#', icon: <FaGear /> },
 ]
 
 const NavSection = () => {
