@@ -11,7 +11,7 @@ const QuickNewGoal = () => {
       justifyContent='flex-start'
       color='darkMode.text'
       fontSize='xl'
-      padding={2}
+      padding={5}
       marginBottom={5}
       borderRadius={8}
     >

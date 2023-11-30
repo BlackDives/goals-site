@@ -11,6 +11,7 @@ const NavBar = () => {
       width='100%'
       height='100px'
       backgroundColor='#262626'
+      marginBottom={3}
     >
       <Flex
         height='100%'
