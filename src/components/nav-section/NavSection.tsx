@@ -1,5 +1,6 @@
 import React from 'react'
 import { Flex, Text, UnorderedList, ListItem, Link } from '@chakra-ui/react'
+import { Link as RouterLink } from 'react-router-dom'
 import { FaHouse } from 'react-icons/fa6'
 import { FaBarsStaggered } from 'react-icons/fa6'
 import { FaPeopleGroup } from 'react-icons/fa6'
@@ -10,14 +11,14 @@ import { FaGear } from 'react-icons/fa6'
 import { FaMagnifyingGlass } from 'react-icons/fa6'
 
 const Links = [
-  { id: 1, title: 'Home', route: '#', icon: <FaHouse /> },
-  { id: 2, title: 'Search', route: '#', icon: <FaMagnifyingGlass /> },
-  { id: 3, title: 'Goals', route: '#', icon: <FaBarsStaggered /> },
-  { id: 4, title: 'Friends', route: '#', icon: <FaPeopleGroup /> },
-  { id: 5, title: 'Messages', route: '#', icon: <FaMessage /> },
-  { id: 6, title: 'Bookmarks', route: '#', icon: <FaBookmark /> },
-  { id: 7, title: 'Profile', route: '#', icon: <FaUser /> },
-  { id: 8, title: 'Settings', route: '#', icon: <FaGear /> },
+  { id: 1, title: 'Home', route: '/home', icon: <FaHouse /> },
+  { id: 2, title: 'Search', route: '/search', icon: <FaMagnifyingGlass /> },
+  { id: 3, title: 'Goals', route: '/goals', icon: <FaBarsStaggered /> },
+  { id: 4, title: 'Friends', route: '/friends', icon: <FaPeopleGroup /> },
+  { id: 5, title: 'Messages', route: '/messages', icon: <FaMessage /> },
+  { id: 6, title: 'Bookmarks', route: '/bookmarks', icon: <FaBookmark /> },
+  { id: 7, title: 'Profile', route: '/profile', icon: <FaUser /> },
+  { id: 8, title: 'Settings', route: '/settings', icon: <FaGear /> },
 ]
 
 const NavSection = () => {
@@ -43,19 +44,21 @@ const NavSection = () => {
         {Links.map((data) => {
           return (
             <ListItem key={data.id}>
-              <Link
-                display='flex'
-                flexDirection='row'
-                alignItems='center'
-                color='darkMode.text'
-                fontSize='2xl'
-                textDecoration='none'
-                marginBottom={3}
-                _hover={{ color: 'darkMode.primary' }}
-              >
-                <Text marginRight={2}>{data.icon}</Text>
-                <Text>{data.title}</Text>
-              </Link>
+              <RouterLink to={data.route}>
+                <Link
+                  display='flex'
+                  flexDirection='row'
+                  alignItems='center'
+                  color='darkMode.text'
+                  fontSize='2xl'
+                  textDecoration='none'
+                  marginBottom={3}
+                  _hover={{ color: 'darkMode.accent' }}
+                >
+                  <Text marginRight={2}>{data.icon}</Text>
+                  <Text>{data.title}</Text>
+                </Link>
+              </RouterLink>
             </ListItem>
           )
         })}

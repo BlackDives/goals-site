@@ -22,7 +22,7 @@ const SuggestedContact = () => {
         </Flex>
       </Flex>
       <Flex>
-        <Text color='darkMode.accent'>Follow</Text>
+        <Text color='darkMode.primary'>Follow</Text>
       </Flex>
     </Flex>
   )

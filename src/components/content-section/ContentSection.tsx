@@ -8,6 +8,7 @@ const ContentSection = () => {
       backgroundColor='darkMode.background'
       flexDirection='column'
       width='60%'
+      overflowY='scroll'
     >
       <Text
         color='darkMode.text'
@@ -19,6 +20,8 @@ const ContentSection = () => {
         Feed
       </Text>
       <Flex flexDirection='column' width='100%'>
+        <GoalOnFeed />
+        <GoalOnFeed />
         <GoalOnFeed />
         <GoalOnFeed />
         <GoalOnFeed />
