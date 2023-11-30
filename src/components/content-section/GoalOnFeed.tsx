@@ -5,11 +5,12 @@ const GoalOnFeed = () => {
   return (
     <Flex
       flexDirection='column'
-      borderBottom='2px solid'
-      borderColor='darkMode.primary'
+      backgroundColor='#262626'
       padding={2}
+      marginBottom={5}
       minHeight='20vh'
       justifyContent='space-between'
+      borderRadius={8}
     >
       <Flex
         flexDirection='row'

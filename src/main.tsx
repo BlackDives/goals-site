@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ChakraProvider, Flex } from '@chakra-ui/react'
+import { NavBar } from './components/nav-bar/NavBar'
 import { Root } from './routes/root'
 import { Home } from './routes/HomeRoute'
 import { SearchRoute } from './routes/SearchRoute'
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
+      <NavBar />
       <Flex marginX='auto' maxWidth='1500px'>
         <RouterProvider router={router} />
       </Flex>

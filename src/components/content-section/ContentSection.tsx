@@ -1,5 +1,6 @@
 import React from 'react'
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex, Button } from '@chakra-ui/react'
+import { QuickNewGoal } from './QuickNewGoal'
 import { GoalOnFeed } from './GoalOnFeed'
 
 const ContentSection = () => {
@@ -8,17 +9,9 @@ const ContentSection = () => {
       backgroundColor='darkMode.background'
       flexDirection='column'
       width='60%'
-      overflowY='scroll'
+      paddingY={2}
     >
-      <Text
-        color='darkMode.text'
-        borderBottom='2px solid'
-        borderColor='darkMode.primary'
-        fontSize='xl'
-        padding={2}
-      >
-        Feed
-      </Text>
+      <QuickNewGoal />
       <Flex flexDirection='column' width='100%'>
         <GoalOnFeed />
         <GoalOnFeed />

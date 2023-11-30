@@ -28,18 +28,18 @@ const NavSection = () => {
       background='darkMode.background'
       flexDirection='column'
       alignItems='center'
-      borderRight='2px solid'
-      borderColor='darkMode.primary'
       paddingY={2}
     >
       <UnorderedList
+        backgroundColor='#262626'
         listStyleType='none'
-        width='50%'
+        width='80%'
         display='flex'
         flexDirection='column'
         alignItems='flex-start'
-        paddingLeft={0}
+        padding={5}
         margin={0}
+        borderRadius={8}
       >
         {Links.map((data) => {
           return (

@@ -10,9 +10,7 @@ const NavBar = () => {
       alignItems='center'
       width='100%'
       height='100px'
-      backgroundColor={'darkMode.background'}
-      borderBottom='2px solid'
-      borderColor='darkMode.primary'
+      backgroundColor='#262626'
     >
       <Flex
         height='100%'
@@ -23,7 +21,7 @@ const NavBar = () => {
       >
         <Flex flexDirection='row' width='50%' justifyContent='flex-start'>
           <Text fontSize='50px' color={'darkMode.primary'}>
-            GLZ
+            MyGLZ
           </Text>
         </Flex>
       </Flex>
@@ -34,31 +32,30 @@ const NavBar = () => {
         alignItems='center'
         justifyContent='flex-start'
       >
-        <Flex
-          height='50px'
-          width='55%'
-          border='2px solid'
-          borderColor='darkMode.primary'
-          borderRadius={3}
-        >
+        <Flex height='50px' width='55%'>
+          <Button
+            display='flex'
+            flexDirection='row'
+            justifyContent='flex-end'
+            backgroundColor='#131313'
+            height='100%'
+            borderRightRadius={0}
+            borderLeftRadius={25}
+            padding={0}
+          >
+            <FaSearch color='gray' />
+          </Button>
           <Input
-            placeholder='Search'
+            placeholder={`Search...`}
             height='100%'
             width='90%'
             border='none'
-            borderLeftRadius={5}
-          />
-          <Button
-            height='100%'
-            width='10%'
-            border='none'
-            borderRightRadius={0}
+            backgroundColor='#131313'
             borderLeftRadius={0}
-            backgroundColor='darkMode.primary'
-            color='darkMode.text'
-          >
-            <FaSearch />
-          </Button>
+            borderRightRadius={25}
+            paddingLeft={2}
+            _placeholder={{ color: 'gray' }}
+          />
         </Flex>
       </Flex>
     </Flex>
