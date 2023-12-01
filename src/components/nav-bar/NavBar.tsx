@@ -12,6 +12,9 @@ const NavBar = () => {
       height='100px'
       backgroundColor='#262626'
       marginBottom={3}
+      position='sticky'
+      top={0}
+      zIndex={3}
     >
       <Flex
         height='100%'
@@ -22,7 +25,7 @@ const NavBar = () => {
       >
         <Flex flexDirection='row' width='50%' justifyContent='flex-start'>
           <Text fontSize='50px' color={'darkMode.primary'}>
-            MyGLZ
+            Wati
           </Text>
         </Flex>
       </Flex>

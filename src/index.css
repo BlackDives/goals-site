@@ -6,4 +6,5 @@
 
 #root {
   background-color: #131313;
+  overflow-y: scroll;
 }
