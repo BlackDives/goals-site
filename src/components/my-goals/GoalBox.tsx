@@ -37,63 +37,78 @@ const GoalBox = () => {
   return (
     <Flex
       flexDirection='column'
-      alignItems='flex-start'
+      alignItems='space-between'
       height='300px'
       width='300px'
       backgroundColor='#262626'
       borderRadius={8}
-      marginRight={4}
       padding={4}
     >
-      <Flex marginBottom={2}>
-        <Text color='darkMode.text' fontSize='xl' fontWeight='bold'>
-          Bulk up 10lbs in 3 months
-        </Text>
-      </Flex>
-      <Flex width='100%' marginBottom={127}>
-        <GoalTag tagName='bulking' color='purple' />
-        <GoalTag tagName='fitness' color='green' />
-        <GoalTag tagName='lifting' color='orange' />
-      </Flex>
-      <Flex marginBottom={1}>
-        <Text color='darkMode.text'>Progress: 35%</Text>
-      </Flex>
-      <Flex
-        backgroundColor='darkMode.background'
-        width='100%'
-        height='10px'
-        borderRadius={8}
-        marginBottom={4}
-      >
-        <Flex backgroundColor='darkMode.primary' width='35%' borderRadius={8} />
-      </Flex>
-      <Flex width='100%' flexDirection='row' justifyContent='space-between'>
+      <Flex flexDirection='column' height='70%'>
         <Flex>
-          <Flex flexDirection='row' alignItems='center' marginRight={4}>
-            <FaRegHeart color='white' size={25} />
-            <Text color='darkMode.text' marginLeft={2}>
-              4
-            </Text>
-          </Flex>
-          <Flex flexDirection='row' alignItems='center'>
-            <FaRegComment color='white' size={25} />
-            <Text color='darkMode.text' marginLeft={2}>
-              7
-            </Text>
-          </Flex>
+          <Text color='darkMode.text'>11/24/2023</Text>
         </Flex>
-        <Flex>
+        <Flex marginBottom={2}>
+          <Text color='darkMode.text' fontSize='xl' fontWeight='bold'>
+            Bulk up 10lbs in 3 months
+          </Text>
+        </Flex>
+        <Flex width='100%'>
+          <GoalTag tagName='bulking' color='purple' />
+          <GoalTag tagName='fitness' color='green' />
+          <GoalTag tagName='lifting' color='orange' />
+        </Flex>
+      </Flex>
+      <Flex flexDirection='column'>
+        <Flex marginBottom={1}>
+          <Text color='darkMode.text'>Progress: 35%</Text>
+        </Flex>
+        <Flex
+          backgroundColor='darkMode.background'
+          width='100%'
+          height='10px'
+          borderRadius={8}
+          marginBottom={4}
+        >
           <Flex
             backgroundColor='darkMode.primary'
-            flexDirection='row'
-            alignItems='center'
-            borderRadius={15}
-            padding={1}
-          >
-            <FaRegClock color='#422659' />
-            <Text color='#422659' marginLeft={1}>
-              6 weeks left
-            </Text>
+            width='35%'
+            borderRadius={8}
+          />
+        </Flex>
+        <Flex
+          width='100%'
+          height='30%'
+          flexDirection='row'
+          justifyContent='space-between'
+        >
+          <Flex>
+            <Flex flexDirection='row' alignItems='center' marginRight={4}>
+              <FaRegHeart color='white' size={25} />
+              <Text color='darkMode.text' marginLeft={2}>
+                4
+              </Text>
+            </Flex>
+            <Flex flexDirection='row' alignItems='center'>
+              <FaRegComment color='white' size={25} />
+              <Text color='darkMode.text' marginLeft={2}>
+                7
+              </Text>
+            </Flex>
+          </Flex>
+          <Flex>
+            <Flex
+              backgroundColor='darkMode.primary'
+              flexDirection='row'
+              alignItems='center'
+              borderRadius={15}
+              padding={1}
+            >
+              <FaRegClock color='#422659' />
+              <Text color='#422659' marginLeft={1}>
+                6 weeks left
+              </Text>
+            </Flex>
           </Flex>
         </Flex>
       </Flex>

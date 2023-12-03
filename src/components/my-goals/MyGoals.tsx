@@ -1,5 +1,13 @@
 import React from 'react'
-import { Button, Flex, ListItem, Text, UnorderedList } from '@chakra-ui/react'
+import {
+  Grid,
+  GridItem,
+  Button,
+  Flex,
+  ListItem,
+  Text,
+  UnorderedList,
+} from '@chakra-ui/react'
 import { GoalBox } from './GoalBox'
 
 const GoalStatus = [
@@ -11,7 +19,7 @@ const GoalStatus = [
 
 const MyGoals = () => {
   return (
-    <Flex flexDirection='column'>
+    <Flex flexDirection='column' width='100%'>
       <Flex
         flexDirection='row'
         alignItems='center'
@@ -43,11 +51,14 @@ const MyGoals = () => {
           ))}
         </UnorderedList>
       </Flex>
-      <Flex flexDirection='row'>
+      <Grid templateColumns='repeat(3, 1fr)' gap={4}>
         <GoalBox />
         <GoalBox />
         <GoalBox />
-      </Flex>
+        <GoalBox />
+        <GoalBox />
+        <GoalBox />
+      </Grid>
     </Flex>
   )
 }

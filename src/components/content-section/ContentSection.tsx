@@ -20,6 +20,8 @@ const ContentSection = () => {
         <GoalOnFeed />
         <GoalOnFeed />
         <GoalOnFeed />
+        <GoalOnFeed />
+        <GoalOnFeed />
       </Flex>
     </Flex>
   )
