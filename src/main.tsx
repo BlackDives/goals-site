@@ -6,7 +6,8 @@ import { NavBar } from './components/nav-bar/NavBar'
 import { Root } from './routes/root'
 import { Home } from './routes/HomeRoute'
 import { SearchRoute } from './routes/SearchRoute'
-import { Goals } from './routes/GoalsRoute'
+import { GoalsRoute } from './routes/GoalsRoute'
+import { FriendsRoute } from './routes/FriendsRoute'
 import { theme } from './config/theme'
 import './index.css'
 
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/goals',
-        element: <Goals />,
+        element: <GoalsRoute />,
+      },
+      {
+        path: '/friends',
+        element: <FriendsRoute />,
       },
     ],
   },
