@@ -6,6 +6,7 @@ import { NavBar } from './components/nav-bar/NavBar'
 import { Root } from './routes/root'
 import { Home } from './routes/HomeRoute'
 import { SearchRoute } from './routes/SearchRoute'
+import { Goals } from './routes/GoalsRoute'
 import { theme } from './config/theme'
 import './index.css'
 
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: '/search',
         element: <SearchRoute />,
+      },
+      {
+        path: '/goals',
+        element: <Goals />,
       },
     ],
   },

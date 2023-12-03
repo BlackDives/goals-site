@@ -1,3 +1,10 @@
+import { Flex } from '@chakra-ui/react'
+import { MyGoals } from '../components/my-goals/MyGoals'
+
 export function Goals() {
-  return <div>Goals Page goals paaaaage</div>
+  return (
+    <Flex>
+      <MyGoals />
+    </Flex>
+  )
 }
