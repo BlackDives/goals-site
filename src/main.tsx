@@ -10,6 +10,7 @@ import { GoalsRoute } from './routes/GoalsRoute'
 import { FriendsRoute } from './routes/FriendsRoute'
 import { theme } from './config/theme'
 import './index.css'
+import { MessagesRoute } from './routes/MessagesRoute'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: '/friends',
         element: <FriendsRoute />,
+      },
+      {
+        path: '/messages',
+        element: <MessagesRoute />,
       },
     ],
   },
