@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Input, Text } from '@chakra-ui/react'
+import { Button, Flex, Input, Text } from '@chakra-ui/react'
 import { MessagePreview } from './MessagePreview'
 import { IncomingMessage } from './IncomingMessage'
 import { OutgoingMessage } from './OutgoingMessage'
@@ -35,12 +35,22 @@ const MessagesComponent = () => {
             </Flex>
           </Flex>
           <Flex height='5%'>
-            <Input
-              placeholder='Type your message...'
-              border='none'
-              backgroundColor='darkMode.background'
-              borderRadius={25}
-            />
+            <form style={{ width: '100%' }}>
+              <Flex
+                backgroundColor='darkMode.background'
+                border='2px solid green'
+              >
+                <Input
+                  placeholder='Type your message...'
+                  border='none'
+                  backgroundColor='darkMode.background'
+                  borderRadius={25}
+                />
+                <Button backgroundColor='darkMode.primary' color='white'>
+                  O
+                </Button>
+              </Flex>
+            </form>
           </Flex>
         </Flex>
         <Flex
@@ -51,14 +61,16 @@ const MessagesComponent = () => {
           borderRadius={8}
           width='30%'
         >
-          <Flex width='100%'>
-            <Input
-              placeholder='Search...'
-              border='none'
-              background='darkMode.background'
-              borderRadius={25}
-            />
-          </Flex>
+          <form style={{ width: '100%' }}>
+            <Flex width='100%'>
+              <Input
+                placeholder='Search...'
+                border='none'
+                background='darkMode.background'
+                borderRadius={25}
+              />
+            </Flex>
+          </form>
           <Flex flexDirection='column'>
             <MessagePreview />
             <MessagePreview />

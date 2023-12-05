@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { auth } from '../../server'
+import { useAuthState } from 'react-firebase-hooks/auth'
+import { GoogleAuthProvider, signInWithRedirect } from 'firebase/auth'
 import { Flex, Text, Input, Button } from '@chakra-ui/react'
+import { FaCircleUser } from 'react-icons/fa6'
 import { FaSearch } from 'react-icons/fa'
 
 const NavBar = () => {
+  const [user] = useAuthState(auth)
+
+  const signOut = () => {
+    auth.signOut()
+  }
+
+  const googleSignIn = () => {
+    const provider = new GoogleAuthProvider()
+    signInWithRedirect(auth, provider)
+  }
   return (
     <Flex
       flexDirection='row'
@@ -18,7 +32,7 @@ const NavBar = () => {
     >
       <Flex
         height='100%'
-        width='30%'
+        width='20%'
         flexDirection='row'
         alignItems='center'
         justifyContent='center'
@@ -31,7 +45,7 @@ const NavBar = () => {
       </Flex>
       <Flex
         height='100%'
-        width='70%'
+        width='60%'
         flexDirection='row'
         alignItems='center'
         justifyContent='flex-start'
@@ -61,6 +75,22 @@ const NavBar = () => {
             _placeholder={{ color: 'gray' }}
           />
         </Flex>
+      </Flex>
+      <Flex width='20%'>
+        {user ? (
+          <Button onClick={signOut} background='transparent'>
+            <FaCircleUser size={45} color='white' />
+          </Button>
+        ) : (
+          <Button
+            backgroundColor='darkMode.primary'
+            color='darkMode.text'
+            _hover={{ backgroundColor: 'darkMode.accent' }}
+            onClick={googleSignIn}
+          >
+            Sign In
+          </Button>
+        )}
       </Flex>
     </Flex>
   )
